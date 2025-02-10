@@ -12,14 +12,15 @@
         /* 
             Put styles in here or in the CSS
         */
-        body {
-            width: 80%;
+        h1, h2, p {
+            margin: 0;
         }
         .name {
             font-family: "DM Serif Text", serif;
             font-size: 48px;
             font-weight: 400;
             font-style: normal;
+            line-height: 55px;
         }
 
 
@@ -36,57 +37,76 @@
             font-style: normal;
             font-size: 200px;
             line-height: 5%;
+            padding: 90px 0px 80px;
+            display: inline-block;
+        
 }
         .description {
             font-family: "Poppins", serif;
             font-weight: 400;
             font-style: normal;
             font-size: 20px;
+            display: inline-block;
 
         }
+        .big_container > * {
 
-  
-        
-    </style>
+            display: inline-block;
+            vertical-align: top;
+        }
+        .card {
+            border-top: solid;
+            border-color: peru;
+            border-top-width: 20px;
+            padding: 5px;
+            margin: 10px;
+        }
+    
+
+
+</style>
 </head>
 <body>
-    <div class="card">
-    <div>
-        <p class="name">Dua Lipa</p>
-    </div>
-    <div>
-        <p class="genre">Pop</p>
-    </div>
-    <div>
-        <p class="number_of_hits">14</p>
-        <p class="description">Billboard Hot 100 Songs</p>
-    </div>
-    </div>
-
+    <div class="big_container">
     <div class="card">
         <div>
-            <p class="name">Kacey Musgraves</p>
+            <p class="genre">Pop</p>
         </div>
+        <p class="name">Dua</br> Lipa</p>
+
+    <div>
+        <p class="number_of_hits">14</p>
+        <p class="description">Billboard</br> Hot</br> 100</br> Songs</p>
+    </div>
+</div>
+
+    <div class="card">
         <div>
             <p class="genre">Country</p>
         </div>
         <div>
+            <p class="name">Kacey</br> Musgraves</p>
+        </div>
+
+        <div>
             <p class="number_of_hits">5</p>
-            <p class="description">Billboard Hot 100 Songs</p>
+            <p class="description">Billboard</br> Hot</br> 100</br> Songs</p>
         </div>
         </div>
 
     <div class="card">
+        <div>
+            <p class="genre">Hip-Hop</p>
+        </div>
             <div>
-                <p class="name">Kendrick Lamar</p>
+                <p class="name">Kendrick</br> Lamar</p>
             </div>
-            <div>
-                <p class="genre">Hip-Hop</p>
-            </div>
+
             <div>
                 <p class="number_of_hits">54</p>
-                <p class="description">Billboard Hot 100 Songs</p>
+                <p class="description">Billboard</br> Hot</br> 100</br> Songs</p>
             </div>
             </div>
+        </div>
 </body>
 </html>
