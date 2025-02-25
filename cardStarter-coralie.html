@@ -58,10 +58,20 @@
             padding-left: 10px;
 
         }
+
+        .big_container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            flex-direction: row;
+        }
+
         .big_container > * {
 
             display: inline-block;
             vertical-align: top;
+
         }
         .card {
             border-top: solid;
@@ -85,6 +95,26 @@
             font-size: 18px;
         }
 
+        @media (min-width: 601px) and (max-width: 991px) {
+        .big_container {
+            flex-direction: column;
+            margin: 0 auto;
+
+        }
+
+      
+
+    } 
+
+    @media (max-width: 600px) {
+
+        .big_container {
+            flex-direction: column;
+            
+        }
+
+
+    } 
 
 </style>
 </head>
